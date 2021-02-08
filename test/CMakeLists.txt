@@ -20,3 +20,10 @@ target_link_libraries(powercap-rapl-test PRIVATE powercap)
 add_executable(powercap-sysfs-test powercap-sysfs-test.c)
 target_link_libraries(powercap-sysfs-test PRIVATE powercap)
 add_unit_test(powercap-sysfs-test)
+
+add_executable(powercap-tree-test powercap-tree-test.c
+                                  ${PROJECT_SOURCE_DIR}/src/powercap-tree.c)
+target_include_directories(powercap-tree-test PRIVATE ${PROJECT_SOURCE_DIR}/inc)
+target_link_libraries(powercap-tree-test PRIVATE powercap)
+# Requires a real system
+# add_unit_test(powercap-tree-test)
