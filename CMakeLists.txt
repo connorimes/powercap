@@ -106,5 +106,6 @@ add_custom_target(uninstall COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_D
 # Tests and Utilities
 
 enable_testing()
+add_subdirectory(docs)
 add_subdirectory(test)
 add_subdirectory(utils)
