@@ -24,6 +24,13 @@ matrix:
 
 language: c
 
+addons:
+  apt:
+    packages:
+      - doxygen
+      # graphviz is a suggested dependency of doxygen, which we actually need, o/w we get "sh: 1: dot: not found"
+      - graphviz
+
 script:
   - mkdir _build
   - cd _build
