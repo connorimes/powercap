@@ -1,3 +1,10 @@
+powercap (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update standards version to 4.6.1, no changes needed.
+
+ -- Connor Imes <ckimes@ubuntu.com>  Sat, 14 May 2022 09:38:15 -0400
+
 powercap (0.5.0-1) unstable; urgency=medium
 
   * New upstream release.
