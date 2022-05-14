@@ -1,5 +1,18 @@
 # Release Notes
 
+## [v0.6.0] - 2022-05-13
+
+### Added
+
+* powercap-info: control type name no longer required - will print info for all control types if not set
+
+### Changed
+
+* Powercap CMake package config helper now uses package-specific name for global components variable.
+See [CMake Issue #23112] and [CMake Merge Request #6975] for reasoning and technical details.
+* Internal tweaks based on testing with additional compiler flags
+
+
 ## [v0.5.0] - 2021-12-09
 
 ### Added
@@ -138,6 +151,7 @@
 
 * Initial public release
 
+[v0.6.0]: https://github.com/powercap/powercap/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/powercap/powercap/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/powercap/powercap/compare/v0.3.1...v0.4.0
 [v0.3.1]: https://github.com/powercap/powercap/compare/v0.3.0...v0.3.1
@@ -147,3 +161,5 @@
 [#6]: https://github.com/powercap/powercap/issues/6
 [#4]: https://github.com/powercap/powercap/issues/4
 [#1]: https://github.com/powercap/powercap/issues/1
+[CMake Issue #23112]: https://gitlab.kitware.com/cmake/cmake/-/issues/23112
+[CMake Merge Request #6975]: https://gitlab.kitware.com/cmake/cmake/-/merge_requests/6975
